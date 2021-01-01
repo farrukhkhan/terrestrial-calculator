@@ -20,7 +20,6 @@ function main() {
     initAutocomplete();
     setInterval(loadLastLocation, 60000);
     redrawLocationsDropdown();
-    removeObsoleteValues();
 
     let locations = JSON.parse(localStorage.getItem(locationKey));
     if (locations === null || locations === []) {
